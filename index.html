@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+	</head>
+
+	<body ng-app='internationalization'>
+		<div ng-controller='demo'>
+			<div>ello</div>
+			<div>{{123 | currency}}</div>
+			<div>{{'1993-05-17' | date: 'fullDate'}}</div>
+			<div>{{11111111111111111 | number}}</div>
+			<button ng-click='clickedIndia()'>Change to india</button>
+			<button ng-click='clickedGermany()'>Change to germany</button>
+			<button ng-click='clickedSpain()'>Change to Spain</button>
+		</div>
+		<div>
+			<div>{{123 | currency}}</div>
+		</div>
+
+		<h4>Standard date-picker</h4>
+        <md-datepicker ng-model="myDate" md-placeholder="Enter date"></md-datepicker>
+
+		
+		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js'></script>
+		<script src='tmhDynamicLocale.js'></script>
+		 <!-- // <script src='angular-locale_en-in.js'></script> -->
+		 <!-- // <script src='angular-locale_de-de.js'></script> -->
+		  
+      <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>-->
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script src='index.js'></script>
+
+	</body>
+</html>
